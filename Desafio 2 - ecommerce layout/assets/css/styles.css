@@ -1,0 +1,125 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'sidebar main'
+    'footer footer';
+    gap: 1px;
+    background-color: #DDE6ED;
+}
+
+.navbar-container{
+    grid-area: header;    
+    background-color: lightgray;
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.mainContainer{
+    display:flex;
+    min-height: 100vh;
+}
+
+.mainContainer-left{
+    display: flex;
+    align-content: flex-start;
+    grid-area: sidebar;
+    background-color: lightgray;
+    margin-top:10px;
+    height: 98%;
+}
+
+.mainContainer-left ul{
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    padding-right: 40px;
+    padding-top: 35px;
+}
+
+.mainContainer-left li{
+    font-size: 13px;
+    margin: 10px;
+}
+
+.mainContainer-right{
+    display: flex;
+    grid-area: main;
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.product-container{
+    width: 400px;
+    height: 500px;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.product-container img{
+    width: 300px;
+    height: 300px;
+}
+
+.description-price{
+    display:flex;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 15px;
+}
+
+.precio-producto{
+
+    display:flex;
+    justify-content: center;
+}
+
+.button-container{
+    display:flex;
+    justify-content: center;
+    align-content: flex-end;
+    height: 60px;    
+}
+
+button{
+    align-content: center;
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    font-size: 13px;    
+}
+
+button:hover{
+    background-color: gray;
+}
+
+p{
+    color: #27374D;
+}
+
+.pie-de-pagina{
+    display: flex;
+    grid-area: footer;
+    background-color: #d3d3d3; 
+    align-content: center;
+    justify-content: center;
+}
